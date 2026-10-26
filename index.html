@@ -391,7 +391,7 @@ button.acc-head:hover .acc-tog{border-color:var(--amber);color:var(--amber)}
 .contact-soc .soc{opacity:1;transform:none;width:64px;height:64px;background:transparent}
 .contact-soc .soc svg{width:24px;height:24px}
 .contact-soc .soc:hover,.contact-soc .soc:focus-visible{background:var(--grad);border-color:var(--amber);color:var(--ink)}
-@media (max-width:560px){.contact-soc{gap:14px}.contact-soc .soc{width:54px;height:54px}.contact-soc .soc svg{width:21px;height:21px}}
+@media (max-width:560px){.contact-foot{flex-direction:column;align-items:center;text-align:center}.contact-soc{display:grid;grid-template-columns:repeat(3,54px);gap:16px 20px;justify-content:center}.contact-soc .soc{width:54px;height:54px}.contact-soc .soc svg{width:21px;height:21px}}
 
 
 
@@ -969,6 +969,10 @@ button.acc-head:hover .acc-tog{border-color:var(--amber);color:var(--amber)}
   .door-sub{display:none}
   .door-arrow{top:10px;right:10px;width:24px;height:24px}
   .door-arrow svg{width:12px;height:12px}
+  .copy{bottom:calc(252px + env(safe-area-inset-bottom,0px))}
+  .doors{grid-template-columns:1fr}
+  .door{min-height:56px;flex-direction:row;justify-content:flex-start;align-items:center;padding:0 18px}
+  .door-arrow{top:50%;right:16px;margin-top:-12px}
   .pill{height:44px;padding:0 18px;font-size:.92rem}
   .tabs .tab{padding:0 11px;font-size:.84rem}
   .project a{grid-template-columns:1fr auto;padding:22px 20px}
